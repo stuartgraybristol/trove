@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stucollyn.nfc_play.trove.prototype1UI.NewStorySaveMetadata">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/enter_story_name_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Give this story a name:"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/enter_story_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="Story name."
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/enter_tag_name_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:text="Tag this story:"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/enter_story_tag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="Tag 1."
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/enter_story_tag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="Tag 2."
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/enter_story_tag3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="Tag 3."
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/confirm_review"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/circle_button_ok"
+                android:onClick="Confirm"
+                android:src="@drawable/tick"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/discard_review"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/circle_button_ok"
+                android:onClick="Discard"
+                android:src="@drawable/cross"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
