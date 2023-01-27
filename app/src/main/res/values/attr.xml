@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <attr name="CustomShape1" format="reference" />
-    <attr name="CustomShape2" format="reference" />
-</resources>
