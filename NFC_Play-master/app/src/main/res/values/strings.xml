@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NFC_Play</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_main_menu">trove</string>
+    <string name="title_activity_show_cloud_stories">ShowCloudStories</string>
+</resources>

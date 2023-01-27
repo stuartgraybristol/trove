@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stucollyn.nfc_play.trove.prototype1UI.SaveSelector">
+
+    <TextView
+        android:id="@+id/save_selector_instruction_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Save story to:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/save_to_device"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="SaveLocally"
+        android:src="@drawable/save"
+        android:translationZ="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_device_caption"
+        app:layout_constraintEnd_toStartOf="@+id/save_to_nfc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_selector_instruction_text" />
+
+    <ImageButton
+        android:id="@+id/save_to_nfc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="StartSaveStoryToNFC"
+        android:src="@drawable/phone_nfc_android"
+        android:translationZ="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_nfc_caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/save_to_device"
+        app:layout_constraintTop_toBottomOf="@+id/save_selector_instruction_text" />
+
+    <TextView
+        android:id="@+id/save_to_device_caption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:text="Device\n"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_cloud"
+        app:layout_constraintEnd_toStartOf="@+id/save_to_nfc_caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_to_device" />
+
+    <TextView
+        android:id="@+id/save_to_nfc_caption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:text="Device + NFC"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/save_to_device_caption"
+        app:layout_constraintTop_toBottomOf="@+id/save_to_nfc" />
+
+    <ImageButton
+        android:id="@+id/save_to_cloud"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="SaveToCloud"
+        android:src="@drawable/cloud_storage"
+        android:translationZ="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_cloud_caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_to_nfc_caption" />
+
+    <TextView
+        android:id="@+id/save_to_cloud_caption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:text="Cloud"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_to_cloud" />
+
+</android.support.constraint.ConstraintLayout>

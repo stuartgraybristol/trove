@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stucollyn.nfc_play.trove.prototype1UI.CloudStoryGalleryMenu">
+
+    <TextView
+        android:id="@+id/save_selector_instruction_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top|center"
+        android:text="Find Story By:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="SearchText"
+        android:src="@drawable/search"
+        android:translationZ="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/search_caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_selector_instruction_text" />
+
+    <TextView
+        android:id="@+id/search_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:text="Search"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <ImageButton
+        android:id="@+id/save_to_device"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="SearchDate"
+        android:src="@drawable/date"
+        android:translationZ="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_device_caption"
+        app:layout_constraintEnd_toStartOf="@+id/save_to_nfc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_caption" />
+
+    <ImageButton
+        android:id="@+id/save_to_nfc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="SearchImage"
+        android:src="@drawable/image"
+        android:translationZ="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_nfc_caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/save_to_device"
+        app:layout_constraintTop_toBottomOf="@+id/search_caption" />
+
+    <TextView
+        android:id="@+id/save_to_device_caption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:text="Find by\nDate"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save_to_nfc_caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_to_device" />
+
+    <TextView
+        android:id="@+id/save_to_nfc_caption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:text="Find by\nImage"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/save_to_device_caption"
+        app:layout_constraintTop_toBottomOf="@+id/save_to_nfc" />
+
+</android.support.constraint.ConstraintLayout>
